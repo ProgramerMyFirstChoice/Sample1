@@ -40,6 +40,7 @@ namespace WordCount
         private int StringWordsCount(string str)
         {
             int wordsCount = 0;
+            //Null is delimenetor
 
             string[] strWords = str.Split(null);
             wordsCount = strWords.Length;
