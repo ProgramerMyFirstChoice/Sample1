@@ -20,17 +20,17 @@ namespace WordCount
         private void btnWordCount_Click(object sender, EventArgs e)
         {
             // Assign entered string in str variable
-            string str = txtWordCount.Text;
+            string userInput = txtWordCount.Text;
 
             // Trim the string in both trailing and leading space from the string
-            if (str.Trim() == "")
+            if (userInput.Trim() == "")
             {
                 MessageBox.Show("Please enter the string to display number of word", "Display Word Count Error");
                 // It would not excute the remaining code
                 return;
             }
 
-            int noOfWords = StringWordsCount(str);
+            int noOfWords = StringWordsCount(userInput);
 
             MessageBox.Show("Number of words in the given string is: " + noOfWords.ToString());
 
